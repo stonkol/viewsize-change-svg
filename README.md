@@ -2,3 +2,12 @@
  color, font, chicken
 
 viewport height change the svg sand the width change the color.
+egg: tenga
+cat: doraemon
+dog: 
+human: harare
+monkey: suzanne
+cow: milka
+bear: totoro
+
+
