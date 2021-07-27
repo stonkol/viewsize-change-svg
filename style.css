@@ -2,18 +2,30 @@
 * {
   background: #ebefef;
   user-select: none;
-}
-
-p {
-  font-family: 'Montserrat', sans-serif;
+  height: 100vh;
   margin: 0;
   padding: 0;
-  height: 100vh;
+}
+
+span {
+  font-family: 'Montserrat', sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #233c49;
 }
 
-p {
-  color: #233c49;
+@media (min-width: 500px) {
+  path {
+    fill: red;
+  }
+  svg.egg {
+    visibility: hidden;
+  }
+}
+
+@media (min-width: 700px) {
+  path {
+    fill: gold;
+  }
 }
