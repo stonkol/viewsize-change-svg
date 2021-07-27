@@ -5,24 +5,24 @@
       -moz-user-select: none;
       -ms-user-select: none;
       user-select: none;
-  }
+}
+
 
 html, body {
-    
     @include unselectable();
     height: 100%;
     margin: 0;
     padding: 0;
 }
 body {
-    background: hsl(184, 10%, 93%) url(bg.svg) no-repeat top;
+  //  background: hsl(184, 10%, 93%) url(bg.svg) no-repeat top;
     width: 100%;
-    display:grid;
+    display: grid;
     grid-template-columns: auto;
 }
 
-svg {
-    width: 300px;
+svg { 
+    width: 400px;
     align-self: center;
     justify-self: center;
     // margin-left: 400px;
@@ -46,11 +46,13 @@ span {
     top: 50%;
     width: 100%;
 }
+ 
 
+////////////// WIDTH SETS /////////////////
 @media (min-width: 500px){
-    * {
-       // background: hsl(180, 41%, 32%) url(bg.svg) no-repeat top;
-        height: 100vw;
+    body {
+     //  background: hsl(180, 41%, 32%) url(bg.svg) no-repeat top;
+       // height: 100vw;
         //background-color: hsl(180, 41%, 32%);
     }
     path {
@@ -69,4 +71,10 @@ span {
     path {
         fill: green;
     }
+}
+
+
+////////////// HEIGHT SETS /////////////////
+@media (min-heigth: 400px)
+    
 }
