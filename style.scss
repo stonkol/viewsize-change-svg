@@ -51,23 +51,27 @@ span {
 ////////////// WIDTH SETS /////////////////
 @media (min-width: 500px){
     body {
-     //  background: hsl(180, 41%, 32%) url(bg.svg) no-repeat top;
-       // height: 100vw;
-        //background-color: hsl(180, 41%, 32%);
+      background: hsl(180, 41%, 32%) url(egg.svg) no-repeat top;
     }
     path {
         fill: red;
     }
-    svg.egg {
+    svg.egg { // TESTING
         visibility: hidden;
     }
 }
 @media (min-width: 700px){
+    body {
+        background: hsl(180, 29%, 47%) url(cat.svg) no-repeat top;
+      }
     path {
         fill: gold;
     }
 }
 @media (min-width: 900px){
+    body {
+      
+      }
     path {
         fill: green;
     }

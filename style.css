@@ -39,6 +39,9 @@ span {
 }
 
 @media (min-width: 500px) {
+  body {
+    background: #307373 url(egg.svg) no-repeat top;
+  }
   path {
     fill: red;
   }
@@ -48,6 +51,9 @@ span {
 }
 
 @media (min-width: 700px) {
+  body {
+    background: #559b9b url(cat.svg) no-repeat top;
+  }
   path {
     fill: gold;
   }
