@@ -7,7 +7,6 @@ html, body {
 }
 
 body {
-  background: #ebefef url(bg.svg) no-repeat top;
   width: 100%;
   display: grid;
   grid-template-columns: auto;
