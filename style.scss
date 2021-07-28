@@ -26,7 +26,7 @@ svg {
     align-self: center;
     justify-self: center;
 }
-span {
+#name {
     font-family: 'Montserrat', sans-serif;
     color: $font-color;
     left: 0;
@@ -70,13 +70,44 @@ span {
 
 
 ////////////// HEIGHT SETS: animal /////////////////
-@media (min-height: 400px) {
+@media (min-height: 300px) {
     body {
         background: url(egg.svg) no-repeat top;
       }
+    #name {
+        color: transparent;
+    }
+    #name:after{
+        content: "Tenga";
+        color: $font-color; /* set color to original text color */
+        margin-left: -30px; /* margin-left equals length of text we're replacing */
+    }
 }
-@media (min-height: 600px) {
+
+
+@media (min-height: 400px) {
     body {
         background: url(cat.svg) no-repeat top;
       }
+    #name {
+        color: transparent;
+    }
+    #name:after{
+        content: "Doraemon";
+        color: $font-color; /* set color to original text color */
+        margin-left: -30px; /* margin-left equals length of text we're replacing */
+    }
+}
+@media (min-height: 600px) {
+    body {
+        background: url(dog.svg) no-repeat top;
+    }
+    #name {
+        color: transparent;
+    }
+    #name:after{
+        content: "Isle of dogs";
+        color: $font-color; /* set color to original text color */
+        margin-left: -30px; /* margin-left equals length of text we're replacing */
+    }
 }

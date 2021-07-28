@@ -1,8 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap");
 html, body {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   height: 100%;
   margin: 0;
@@ -11,22 +8,17 @@ html, body {
 
 body {
   width: 100%;
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: auto;
-      grid-template-columns: auto;
+  grid-template-columns: auto;
 }
 
 svg {
   width: 400px;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  -ms-grid-column-align: center;
-      justify-self: center;
+  align-self: center;
+  justify-self: center;
 }
 
-span {
+#name {
   font-family: 'Montserrat', sans-serif;
   color: #738b8c;
   left: 0;
@@ -68,15 +60,50 @@ span {
   }
 }
 
-@media (min-height: 400px) {
+@media (min-height: 300px) {
   body {
     background: url(egg.svg) no-repeat top;
+  }
+  #name {
+    color: transparent;
+  }
+  #name:after {
+    content: "Tenga";
+    color: #738b8c;
+    /* set color to original text color */
+    margin-left: -30px;
+    /* margin-left equals length of text we're replacing */
+  }
+}
+
+@media (min-height: 400px) {
+  body {
+    background: url(cat.svg) no-repeat top;
+  }
+  #name {
+    color: transparent;
+  }
+  #name:after {
+    content: "Doraemon";
+    color: #738b8c;
+    /* set color to original text color */
+    margin-left: -30px;
+    /* margin-left equals length of text we're replacing */
   }
 }
 
 @media (min-height: 600px) {
   body {
-    background: url(cat.svg) no-repeat top;
+    background: url(dog.svg) no-repeat top;
+  }
+  #name {
+    color: transparent;
+  }
+  #name:after {
+    content: "Isle of dogs";
+    color: #738b8c;
+    /* set color to original text color */
+    margin-left: -30px;
+    /* margin-left equals length of text we're replacing */
   }
 }
-/*# sourceMappingURL=style.css.map */
