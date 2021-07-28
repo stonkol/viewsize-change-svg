@@ -1,5 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap");
 html, body {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
   user-select: none;
   height: 100%;
   margin: 0;
@@ -8,14 +11,19 @@ html, body {
 
 body {
   width: 100%;
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: auto;
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
 }
 
 svg {
   width: 400px;
-  align-self: center;
-  justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
 }
 
 span {
@@ -71,3 +79,4 @@ span {
     background: url(cat.svg) no-repeat top;
   }
 }
+/*# sourceMappingURL=style.css.map */
