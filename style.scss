@@ -6,6 +6,7 @@
       -ms-user-select: none;
       user-select: none;
 }
+$font-color: hsl(184, 10%, 50%);
 
 
 html, body {
@@ -15,7 +16,6 @@ html, body {
     padding: 0;
 }
 body {
-  //  background: hsl(184, 10%, 93%) url(bg.svg) no-repeat top;
     width: 100%;
     display: grid;
     grid-template-columns: auto;
@@ -25,19 +25,10 @@ svg {
     width: 400px;
     align-self: center;
     justify-self: center;
-    // margin-left: 400px;
 }
 span {
     font-family: 'Montserrat', sans-serif;
-    color: hsl(184, 10%, 50%);
- /* the other way to centr the text
-    height: 100%;
-    width: 100%;
-    display: flex;
-    position: fixed;
-    align-items: center;
-    justify-content: center;
-    */
+    color: $font-color;
     left: 0;
     margin-top: -100px;
     position: absolute;
@@ -48,13 +39,13 @@ span {
 }
  
 
-////////////// WIDTH SETS /////////////////
+////////////// WIDTH SETS the color /////////////////
 @media (min-width: 500px){
     body {
-      background: hsl(180, 41%, 32%) url(egg.svg) no-repeat top;
+      background-color: hsl(186, 92%, 72%);
     }
     path {
-        fill: red;
+        fill: rgb(12, 60, 181);
     }
     svg.egg { // TESTING
         visibility: hidden;
@@ -62,15 +53,15 @@ span {
 }
 @media (min-width: 700px){
     body {
-        background: hsl(180, 29%, 47%) url(cat.svg) no-repeat top;
+        background-color: hsl(0, 82%, 48%);
       }
     path {
-        fill: gold;
+        fill: rgb(247, 185, 152);
     }
 }
 @media (min-width: 900px){
     body {
-      
+        background-color: hsl(115, 85%, 58%);
       }
     path {
         fill: green;
@@ -78,7 +69,14 @@ span {
 }
 
 
-////////////// HEIGHT SETS /////////////////
+////////////// HEIGHT SETS: animal /////////////////
 @media (min-height: 400px) {
-    
+    body {
+        background: url(egg.svg) no-repeat top;
+      }
+}
+@media (min-height: 600px) {
+    body {
+        background: url(cat.svg) no-repeat top;
+      }
 }

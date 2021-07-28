@@ -1,8 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap");
 html, body {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   height: 100%;
   margin: 0;
@@ -11,32 +8,19 @@ html, body {
 
 body {
   width: 100%;
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: auto;
-      grid-template-columns: auto;
+  grid-template-columns: auto;
 }
 
 svg {
   width: 400px;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  -ms-grid-column-align: center;
-      justify-self: center;
+  align-self: center;
+  justify-self: center;
 }
 
 span {
   font-family: 'Montserrat', sans-serif;
   color: #738b8c;
-  /* the other way to centr the text
-    height: 100%;
-    width: 100%;
-    display: flex;
-    position: fixed;
-    align-items: center;
-    justify-content: center;
-    */
   left: 0;
   margin-top: -100px;
   position: absolute;
@@ -48,10 +32,10 @@ span {
 
 @media (min-width: 500px) {
   body {
-    background: #307373 url(egg.svg) no-repeat top;
+    background-color: #76ecf9;
   }
   path {
-    fill: red;
+    fill: #0c3cb5;
   }
   svg.egg {
     visibility: hidden;
@@ -60,16 +44,30 @@ span {
 
 @media (min-width: 700px) {
   body {
-    background: #559b9b url(cat.svg) no-repeat top;
+    background-color: #df1616;
   }
   path {
-    fill: gold;
+    fill: #f7b998;
   }
 }
 
 @media (min-width: 900px) {
+  body {
+    background-color: #48ef39;
+  }
   path {
     fill: green;
   }
 }
-/*# sourceMappingURL=style.css.map */
+
+@media (min-height: 400px) {
+  body {
+    background: url(egg.svg) no-repeat top;
+  }
+}
+
+@media (min-height: 600px) {
+  body {
+    background: url(cat.svg) no-repeat top;
+  }
+}

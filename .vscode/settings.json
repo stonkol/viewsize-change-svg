@@ -14,9 +14,9 @@
 }
 ],
 "liveSassCompile.settings.generateMap": false,
-"workbench.colorTheme": "Visual Studio 2019 Dark",
-"workbench.preferredDarkColorTheme": "Visual Studio 2019 Dark",
-"workbench.preferredLightColorTheme": "Visual Studio 2019 Light",
 "liveSassCompile.settings.autoprefix": [],
-"liveServer.settings.donotShowInfoMsg": true
+"liveServer.settings.donotShowInfoMsg": true,
+"workbench.iconTheme": "material-icon-theme",
+"workbench.preferredDarkColorTheme": "Visual Studio Dark",
+"workbench.preferredLightColorTheme": "Visual Studio Light"
 }
