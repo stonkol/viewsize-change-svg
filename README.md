@@ -10,8 +10,8 @@ viewport height change the svg sand the width change the color.
 - human: harare
 - monkey: suzanne
 ---
--cow: milka
--bear: totoro
+- cow: milka
+- bear: totoro
 
 ## RSC
 Making SVGs Responsive with CSS:
