@@ -7,7 +7,7 @@
     user-select: none;
 }
 $font-color: hsl(180, 30%, 89%);
-$font-shadow: hsl(180, 4%, 16%);
+$font-shadow: hsl(180, 4%, 21%);
 
 
 html, body {
@@ -32,7 +32,7 @@ svg {
     font-family: 'Montserrat', sans-serif;
     color: $font-color;
     font-size: 3em;
-    text-shadow: 3px 3px 7px $font-shadow;
+    text-shadow: 3px 3px 5px $font-shadow;
 
     left: 2%;
     margin-top: -100px;
@@ -77,7 +77,7 @@ svg {
 ////////////// HEIGHT SETS: animal /////////////////
 @media (min-height: 300px) {
     body {
-        background: url(SVG/egg.svg) no-repeat top;
+        background: #d82424 url(SVG/egg.svg) no-repeat top;
       }
     #name {
         color: transparent;
@@ -88,8 +88,6 @@ svg {
         margin-left: -30px; /* margin-left equals length of text we're replacing */
     }
 }
-
-
 @media (min-height: 400px) {
     body {
         background: #e0f7ff url(SVG/Doraemon.svg) no-repeat top;
@@ -107,9 +105,7 @@ svg {
     body {
         background: hsl(39, 94%, 57%) url(SVG/Suzanne.svg) no-repeat top;
     }
-    #name {
-        color: transparent;
-    }
+    #name {color: transparent;}
     #name:after{
         content: "MONO";
         color: $font-color; /* set color to original text color */

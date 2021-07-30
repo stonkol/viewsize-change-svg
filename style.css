@@ -23,7 +23,7 @@ svg {
   font-family: 'Montserrat', sans-serif;
   color: #dbebeb;
   font-size: 3em;
-  text-shadow: 3px 3px 7px #272a2a;
+  text-shadow: 3px 3px 5px #333838;
   left: 2%;
   margin-top: -100px;
   position: absolute;
@@ -65,7 +65,7 @@ svg {
 
 @media (min-height: 300px) {
   body {
-    background: url(SVG/egg.svg) no-repeat top;
+    background: #d82424 url(SVG/egg.svg) no-repeat top;
   }
   #name {
     color: transparent;
