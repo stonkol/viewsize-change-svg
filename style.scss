@@ -1,3 +1,7 @@
+/* differents svg appears  depending the width:
+https://tympanus.net/codrops/2014/08/19/making-svgs-responsive-with-css/ 
+*/
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap');
 @mixin unselectable {
     -webkit-user-select: none;
@@ -19,14 +23,22 @@ html, body {
 }
 body {
     width: 100%;
-    display: grid;
-    grid-template-columns: auto;
 }
 
-svg { 
-    width: 400px;
-    align-self: center;
-    justify-self: center;
+.container { /*eggS ratio: 4:5*/
+    height: 0;             /* collapse the container's height */
+    width: 50%;            /* specify any width you want (a percentage value, basically) */
+    /* apply a padding using the following formula, this formula makes sure the aspect ratio of the container equals that of the svg graphic */
+    padding-top: 66%;      /* (svg height / svg width) * width-value; */
+    position: relative;    /* create positioning context for svg */
+}
+iframe {    /* with/out padding hack: https://tympanus.net/Tutorials/ResponsiveSVGs/index3.html*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;   /* hide the border */
 }
 #name {
     font-family: 'Montserrat', sans-serif;
@@ -58,7 +70,7 @@ svg {
 }
 @media (min-width: 700px){
     body {
-        background-color: hsl(0, 82%, 48%);
+        background: hsl(0, 82%, 48%);
       }
     path {
         fill: rgb(247, 185, 152);
@@ -90,11 +102,8 @@ svg {
 }
 @media (min-height: 400px) {
     body {
-        background: #e0f7ff url(SVG/Doraemon.svg) no-repeat top;
+        background: #e0f7ff  url(SVG/Doraemon.svg)  top;
       }
-    #name {
-        color: transparent;
-    }
     #name:after{
         content: "Doraemon";
         color: $font-color; /* set color to original text color */
@@ -103,9 +112,9 @@ svg {
 }
 @media (min-height: 500px) {
     body {
-        background: hsl(39, 94%, 57%) url(SVG/Suzanne.svg) no-repeat top;
+        background: hsl(39, 94%, 57%) url(SVG/Suzanne.svg) center;
+        background-size: 33%;
     }
-    #name {color: transparent;}
     #name:after{
         content: "MONO";
         color: $font-color; /* set color to original text color */
@@ -114,10 +123,7 @@ svg {
 }
 @media (min-height: 600px) {
     body {
-        background: url(SVG/Arare.svg) no-repeat top;
-    }
-    #name {
-        color: transparent;
+        background: url(SVG/Arare.svg) top ;
     }
     #name:after{
         content: "HUMAN";

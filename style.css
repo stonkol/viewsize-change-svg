@@ -1,3 +1,6 @@
+/* differents svg appears  depending the width:
+https://tympanus.net/codrops/2014/08/19/making-svgs-responsive-with-css/ 
+*/
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap");
 html, body {
   user-select: none;
@@ -9,14 +12,30 @@ html, body {
 
 body {
   width: 100%;
-  display: grid;
-  grid-template-columns: auto;
 }
 
-svg {
-  width: 400px;
-  align-self: center;
-  justify-self: center;
+.container {
+  /*eggS ratio: 4:5*/
+  height: 0;
+  /* collapse the container's height */
+  width: 50%;
+  /* specify any width you want (a percentage value, basically) */
+  /* apply a padding using the following formula, this formula makes sure the aspect ratio of the container equals that of the svg graphic */
+  padding-top: 66%;
+  /* (svg height / svg width) * width-value; */
+  position: relative;
+  /* create positioning context for svg */
+}
+
+iframe {
+  /* with/out padding hack: https://tympanus.net/Tutorials/ResponsiveSVGs/index3.html*/
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  /* hide the border */
 }
 
 #name {
@@ -47,7 +66,7 @@ svg {
 
 @media (min-width: 700px) {
   body {
-    background-color: #df1616;
+    background: #df1616;
   }
   path {
     fill: #f7b998;
@@ -81,10 +100,7 @@ svg {
 
 @media (min-height: 400px) {
   body {
-    background: #e0f7ff url(SVG/Doraemon.svg) no-repeat top;
-  }
-  #name {
-    color: transparent;
+    background: #e0f7ff url(SVG/Doraemon.svg) top;
   }
   #name:after {
     content: "Doraemon";
@@ -97,10 +113,8 @@ svg {
 
 @media (min-height: 500px) {
   body {
-    background: #f8b02a url(SVG/Suzanne.svg) no-repeat top;
-  }
-  #name {
-    color: transparent;
+    background: #f8b02a url(SVG/Suzanne.svg) center;
+    background-size: 33%;
   }
   #name:after {
     content: "MONO";
@@ -113,10 +127,7 @@ svg {
 
 @media (min-height: 600px) {
   body {
-    background: url(SVG/Arare.svg) no-repeat top;
-  }
-  #name {
-    color: transparent;
+    background: url(SVG/Arare.svg) top;
   }
   #name:after {
     content: "HUMAN";
