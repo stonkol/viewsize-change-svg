@@ -1,12 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap');
 @mixin unselectable {
     -webkit-user-select: none;
-      -khtml-user-select: none;
-      -moz-user-select: none;
-      -ms-user-select: none;
-      user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
-$font-color: hsl(184, 10%, 50%);
+$font-color: hsl(180, 30%, 89%);
+$font-shadow: hsl(180, 4%, 16%);
 
 
 html, body {
@@ -14,6 +15,7 @@ html, body {
     height: 100%;
     margin: 0;
     padding: 0;
+    cursor: move;
 }
 body {
     width: 100%;
@@ -29,7 +31,10 @@ svg {
 #name {
     font-family: 'Montserrat', sans-serif;
     color: $font-color;
-    left: 0;
+    font-size: 3em;
+    text-shadow: 3px 3px 7px $font-shadow;
+
+    left: 2%;
     margin-top: -100px;
     position: absolute;
     line-height: 200px;
@@ -61,7 +66,7 @@ svg {
 }
 @media (min-width: 900px){
     body {
-        background-color: hsl(115, 85%, 58%);
+        background: hsl(115, 85%, 58%);
       }
     path {
         fill: green;
@@ -72,7 +77,7 @@ svg {
 ////////////// HEIGHT SETS: animal /////////////////
 @media (min-height: 300px) {
     body {
-        background: url(egg.svg) no-repeat top;
+        background: url(SVG/egg.svg) no-repeat top;
       }
     #name {
         color: transparent;
@@ -87,7 +92,7 @@ svg {
 
 @media (min-height: 400px) {
     body {
-        background: url(cat.svg) no-repeat top;
+        background: #e0f7ff url(SVG/Doraemon.svg) no-repeat top;
       }
     #name {
         color: transparent;
@@ -98,15 +103,28 @@ svg {
         margin-left: -30px; /* margin-left equals length of text we're replacing */
     }
 }
-@media (min-height: 600px) {
+@media (min-height: 500px) {
     body {
-        background: url(dog.svg) no-repeat top;
+        background: hsl(39, 94%, 57%) url(SVG/Suzanne.svg) no-repeat top;
     }
     #name {
         color: transparent;
     }
     #name:after{
-        content: "Isle of dogs";
+        content: "MONO";
+        color: $font-color; /* set color to original text color */
+        margin-left: -30px; /* margin-left equals length of text we're replacing */
+    }
+}
+@media (min-height: 600px) {
+    body {
+        background: url(SVG/Arare.svg) no-repeat top;
+    }
+    #name {
+        color: transparent;
+    }
+    #name:after{
+        content: "HUMAN";
         color: $font-color; /* set color to original text color */
         margin-left: -30px; /* margin-left equals length of text we're replacing */
     }
