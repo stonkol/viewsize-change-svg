@@ -4,26 +4,28 @@ color, font, chicken
 
 
 ## CHARACTERS
-    - egg: tenga
-    - cat: doraemon
-    - monkey: suzanne
-    - human: harare
-    ---
-    - dog: isle of dogs
-    - cow: milka
-    - bear: totoro
+    egg: tenga
+    cat: doraemon
+    monkey: suzanne
+    human: harare
+    
+    ....... NG ........
+    dog: isle of dogs
+    cow: milka
+    bear: totoro
 
-  -  [Why You Should Embed SVG Inline](https://www.jotform.com/blog/why-you-should-embed-svg-inline-98570/)
+  -  [Why You Should Embed SVG Inline:](https://www.jotform.com/blog/why-you-should-embed-svg-inline-98570/)
 
-    Aside from using it as a classic image file via the “<img>” element, SVG can also be implemented via “<object>” or “<iframe>”. The latter two have the advantage that they allow for the execution of JavaScript and animations. The simple variant however, is marking SVG inline in the HTML source code.
+  -  Aside from using it as a classic image file via the <img> element, SVG can also be implemented via <object> or <iframe>. 
+  - The latter two have the advantage that they allow for the `execution of JavaScript and animations`. The simple variant however, is marking SVG inline in the HTML source code.
 
-- [SVG Path builder (codepen)](https://codepen.io/stonkol/pen/WNjMoXJ)
+- [SVG Path builder (codepen) >](https://codepen.io/stonkol/pen/WNjMoXJ)
 
 ## SVG Workflow 
 ### On the web
-1. [Google Images](https://www.google.com/imghp?tbm=isch&tbs=imgo:1)
-2. [Image2svg converter](https://image.online-convert.com/convert-to-svg)
-3. [SVG compressor](https://vecta.io/nano)
+    1. [Google Images](https://www.google.com/imghp?tbm=isch&tbs=imgo:1)
+    2. [Image2svg converter](https://image.online-convert.com/convert-to-svg)
+    3. [SVG compressor](https://vecta.io/nano)
 
 
 ### With apps
