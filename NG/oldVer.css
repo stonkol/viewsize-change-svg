@@ -5,7 +5,6 @@ https://tympanus.net/codrops/2014/08/19/making-svgs-responsive-with-css/
 html, body {
   user-select: none;
   height: 100%;
-  width: 100%;
   margin: 0;
   padding: 0;
   cursor: move;
@@ -52,8 +51,7 @@ iframe {
   top: 50%;
   width: 100%;
 }
-
-#name:after {
+#name:after{
   font-family: 'Montserrat', sans-serif;
   font-size: 3em;
   text-shadow: 3px 3px 5px #333838;
@@ -66,6 +64,9 @@ iframe {
 @media (min-width: 500px) {
   body {
     background-color: #76ecf9;
+  }
+  path {
+    fill: #0c3cb5;
   }
   svg.egg {
     visibility: hidden;
@@ -99,6 +100,9 @@ iframe {
   }
   #name:after {
     content: "Tenga";
+    /* set color to original text color */
+    margin-left: -30px;
+    /* margin-left equals length of text we're replacing */
   }
 }
 
@@ -108,6 +112,8 @@ iframe {
   }
   #name:after {
     content: "Doraemon";
+    color: #dbebeb;
+
   }
 }
 
@@ -118,6 +124,10 @@ iframe {
   }
   #name:after {
     content: "MONO";
+    color: #dbebeb;
+    /* set color to original text color */
+    margin-left: -30px;
+    /* margin-left equals length of text we're replacing */
   }
 }
 
@@ -127,43 +137,9 @@ iframe {
   }
   #name:after {
     content: "HUMAN";
+    color: #dbebeb;
+    /* set color to original text color */
+    margin-left: -30px;
+    /* margin-left equals length of text we're replacing */
   }
 }
-
-/*
-@media (min-height: 300px) {
-    body {
-        background: #d82424 url(SVG/egg.svg) no-repeat top;
-      }
-    #name {
-        color: transparent;
-    }
-    #name:after{
-        content: "Tenga";
-    }
-}
-@media (min-height: 400px) {
-    body {
-        background: #e0f7ff  url(SVG/Doraemon.svg)  top;
-      }
-    #name:after{
-        content: "Doraemon";
-    }
-}
-@media (min-height: 500px) {
-    body {
-        background: hsl(39, 94%, 57%) url(SVG/Suzanne.svg) center;
-        background-size: 33%;
-    }
-    #name:after{
-        content: "MONO";
-    }
-}
-@media (min-height: 600px) {
-    body {
-        background: url(SVG/Arare.svg) top ;
-    }
-    #name:after{
-        content: "HUMAN";
-    }
-}*/
