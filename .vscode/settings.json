@@ -18,5 +18,6 @@
 "liveServer.settings.donotShowInfoMsg": true,
 "workbench.iconTheme": "material-icon-theme",
 "workbench.preferredDarkColorTheme": "Visual Studio Dark",
-"workbench.preferredLightColorTheme": "Visual Studio Light"
+"workbench.preferredLightColorTheme": "Visual Studio Light",
+"liveServer.settings.port": 5501
 }
